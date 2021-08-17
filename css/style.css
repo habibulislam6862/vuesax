@@ -26,6 +26,9 @@ body {
 .bg-secondary {
   background-color: #6f64f8 !important;
 }
+.btn-secondary {
+    background-color: #6f64f8 !important;
+  }
 .bg-success {
   background-color: #fff !important;
 }

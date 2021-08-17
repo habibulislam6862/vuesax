@@ -20,6 +20,7 @@
 
     <div class="container-fluid">
         <div class="row">
+            <!-- Main sidebar start -->
             <div class="col-md-2 g-0">
                 <!-- Sidebar options start -->
                 <aside
@@ -174,6 +175,9 @@
                 </aside>
                 <!-- Sidebar options end -->
             </div>
+            <!-- Main sidebar end -->
+            <!-- ----------------- -->
+            <!-- Main content start -->
             <div class="col-md-10 ps-0">
                 <header class="p-4">
                     <nav class="navbar drop-box-shadow bg-success navbar-expand-lg navbar-light bg-light rounded">
@@ -236,398 +240,417 @@
                         </div>
                     </nav>
                 </header>
-                <!-- Page title, breadcrumb and settings start -->
-                <section class="px-4">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex align-items-center page-title">
-                            <span class="h3 fw-normal title me-3 mb-0 position-relative">Card Actions</span>
-                            <!-- breadcrumb start -->
-                            <nav class="ms-4 fw-semibold" aria-label="breadcrumb">
-                                <ol class="breadcrumb mb-0">
-                                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none"><i
-                                                class="bi bi-house-door"></i></a></li>
-                                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">eCommerce</a>
-                                    </li>
-                                    <li class="breadcrumb-item active text-primary" aria-current="page">Electronics</li>
-                                </ol>
-                            </nav>
-                            <!-- breadcrumb end -->
-                        </div>
-                        <div>
-                            <div
-                                class="rounded-circle bg-secondary gear fs-4 d-flex justify-content-center align-items-center">
-                                <a href="" class="text-success"><i class="bi bi-gear"></i></a>
+                <main>
+                    <!-- Page title, breadcrumb and settings start -->
+                    <section class="px-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center page-title">
+                                <span class="h3 fw-normal title me-3 mb-0 position-relative">Card Actions</span>
+                                <!-- breadcrumb start -->
+                                <nav class="ms-4 fw-semibold" aria-label="breadcrumb">
+                                    <ol class="breadcrumb mb-0">
+                                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none"><i
+                                                    class="bi bi-house-door"></i></a></li>
+                                        <li class="breadcrumb-item"><a href="#"
+                                                class="text-decoration-none">eCommerce</a>
+                                        </li>
+                                        <li class="breadcrumb-item active text-primary" aria-current="page">Electronics
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <!-- breadcrumb end -->
+                            </div>
+                            <div>
+                                <div
+                                    class="rounded-circle bg-secondary gear fs-4 d-flex justify-content-center align-items-center">
+                                    <a href="" class="text-success"><i class="bi bi-gear"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- Page title, breadcrumb and settings end -->
-                <section class="px-4 pt-4">
-                    <div class="row">
-                        <div class="col-md-3 pt-4">
-                            <h5 class="text-primary fs-5">Filters</h5>
-                            <aside class="bg-success drop-box-shadow rounded">
-                                <div class="d-flex flex-column px-4 py-2">
-                                    <!-- Range start -->
-                                    <div class="px-2 py-3 range-slider">
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h5 class="fs-5">Multi Range</h5>
+                    </section>
+                    <!-- Page title, breadcrumb and settings end -->
+                    <!-- Content area start -->
+                    <section class="px-4 pt-4">
+                        <div class="row">
+                            <!-- Page side bar start -->
+                            <div class="col-md-3 pt-4">
+                                <h5 class="text-primary fs-5">Filters</h5>
+                                <aside>
+                                    <div class="bg-success drop-box-shadow rounded d-flex flex-column px-4 py-2">
+                                        <!-- Range start -->
+                                        <div class="px-2 py-3 range-slider vuesax-range">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <h5 class="fs-5">Multi Range</h5>
+                                                </div>
+                                                <div class="fs-5 fw-semibold">
+                                                    <!-- range value -->
+                                                    $<span class="price-from"></span> - $<span class="price-to"></span>
+                                                </div>
                                             </div>
-                                            <div class="fs-5 fw-semibold">
-                                                <!-- range value -->
-                                                <span class="price-from"></span> - <span class="price-to"></span>
-                                            </div>
-                                        </div>
-                                        <!-- Range slider start -->
-                                        <div class="multi-range-slider">
-                                            <input type="range" id="input-left" min="0" step="50" max="1000"
-                                                value="300">
-                                            <input type="range" id="input-right" min="0" step="50" max="1000"
-                                                value="400">
+                                            <!-- Range slider start -->
+                                            <div class="multi-range-slider">
+                                                <input type="range" id="input-left" min="0" step="50" max="1000"
+                                                    value="300">
+                                                <input type="range" id="input-right" min="0" step="50" max="1000"
+                                                    value="400">
 
-                                            <div class="slider">
-                                                <div class="track"></div>
-                                                <div class="range"></div>
+                                                <div class="slider">
+                                                    <div class="track"></div>
+                                                    <div class="range"></div>
+                                                </div>
                                             </div>
+                                            <!-- Range slider end -->
                                         </div>
-                                        <!-- Range slider end -->
+                                        <!-- Range end -->
+                                        <hr>
+                                        <!-- Category start -->
+                                        <div class="px-2 py-3 vuesax-list">
+                                            <h5 class="fs-5">Category</h5>
+                                            <!-- Category item start -->
+                                            <div class="form-check user-select-none text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat-1">
+                                                <label class="form-check-label w-100" for="cat-1">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Cell Phones</div>
+                                                        <div>1920</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Category item end -->
+                                            <!-- Category item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat-2">
+                                                <label class="form-check-label w-100" for="cat-2">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Computers & Tablets</div>
+                                                        <div>750</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Category item end -->
+                                            <!-- Category item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat-3">
+                                                <label class="form-check-label w-100" for="cat-3">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Cell Phone Accessories</div>
+                                                        <div>460</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Category item end -->
+                                            <!-- Category item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat-4">
+                                                <label class="form-check-label w-100" for="cat-4">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Appliances</div>
+                                                        <div>781</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Category item end -->
+                                            <!-- Category item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat-5">
+                                                <label class="form-check-label w-100" for="cat-5">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Audio</div>
+                                                        <div>840</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Category item end -->
+                                            <!-- Category item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat-6">
+                                                <label class="form-check-label w-100" for="cat-6">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>iPhone Accessories</div>
+                                                        <div>1425</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Category item end -->
+                                            <!-- Category item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat-7">
+                                                <label class="form-check-label w-100" for="cat-7">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Cameras & Camcorders</div>
+                                                        <div>45</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Category item end -->
+                                            <!-- Category item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat-8">
+                                                <label class="form-check-label w-100" for="cat-8">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>iPhone Cases & Clips</div>
+                                                        <div>87</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Category item end -->
+                                            <!-- Category item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat-9">
+                                                <label class="form-check-label w-100" for="cat-9">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>TV & Home Theater</div>
+                                                        <div>457</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Category item end -->
+                                            <!-- Category item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="cat-10">
+                                                <label class="form-check-label w-100" for="cat-10">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Small Kitchen Appliances</div>
+                                                        <div>584</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Category item end -->
+                                        </div>
+                                        <!-- Category end -->
+                                        <hr>
+                                        <!-- Brand start -->
+                                        <div class="px-2 py-3 vuesax-list">
+                                            <h5 class="fs-5">Brand</h5>
+                                            <!-- Brand item start -->
+                                            <div class="form-check user-select-none text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="brand-1">
+                                                <label class="form-check-label w-100" for="brand-1">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Insigni</div>
+                                                        <div>1920</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Brand item end -->
+                                            <!-- Brand item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="brand-2">
+                                                <label class="form-check-label w-100" for="brand-2">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Samsung</div>
+                                                        <div>750</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Brand item end -->
+                                            <!-- Brand item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="brand-3">
+                                                <label class="form-check-label w-100" for="brand-3">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Apple</div>
+                                                        <div>460</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Brand item end -->
+                                            <!-- Brand item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="brand-4">
+                                                <label class="form-check-label w-100" for="brand-4">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>HP</div>
+                                                        <div>781</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Brand item end -->
+                                            <!-- Brand item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="brand-5">
+                                                <label class="form-check-label w-100" for="brand-5">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Sony</div>
+                                                        <div>840</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Brand item end -->
+                                            <!-- Brand item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="brand-6">
+                                                <label class="form-check-label w-100" for="brand-6">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Metra</div>
+                                                        <div>1425</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Brand item end -->
+                                            <!-- Brand item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="brand-7">
+                                                <label class="form-check-label w-100" for="brand-7">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Dyne</div>
+                                                        <div>45</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Brand item end -->
+                                            <!-- Brand item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="brand-8">
+                                                <label class="form-check-label w-100" for="brand-8">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>LG</div>
+                                                        <div>87</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Brand item end -->
+                                            <!-- Brand item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="brand-9">
+                                                <label class="form-check-label w-100" for="brand-9">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Canon</div>
+                                                        <div>457</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Brand item end -->
+                                            <!-- Brand item start -->
+                                            <div class="form-check user-select-none pt-3 text-primary">
+                                                <input class="form-check-input" type="checkbox" value="" id="brand-10">
+                                                <label class="form-check-label w-100" for="brand-10">
+                                                    <div class="d-flex justify-content-between fw-medium">
+                                                        <div>Speck</div>
+                                                        <div>584</div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <!-- Brand item end -->
+                                        </div>
+                                        <!-- Brand end -->
+                                        <hr>
+                                        <!-- Rating start -->
+                                        <div class="px-2 py-3 vuesax-rating">
+                                            <h5 class="fs-5">Rating</h5>
+                                            <!-- Rating item start -->
+                                            <div class="d-flex justify-content-between fw-medium pb-3">
+                                                <div>
+                                                    <a href="#" class="text-primary text-decoration-none">
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <span> & Up</span>
+                                                    </a>
+                                                </div>
+                                                <div>8800</div>
+                                            </div>
+                                            <!-- Rating item end -->
+                                            <!-- Rating item start -->
+                                            <div class="d-flex justify-content-between fw-medium pb-3">
+                                                <div>
+                                                    <a href="#" class="text-primary text-decoration-none">
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <span> & Up</span>
+                                                    </a>
+                                                </div>
+                                                <div>3250</div>
+                                            </div>
+                                            <!-- Rating item end -->
+                                            <!-- Rating item start -->
+                                            <div class="d-flex justify-content-between fw-medium pb-3">
+                                                <div>
+                                                    <a href="#" class="text-primary text-decoration-none">
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <span> & Up</span>
+                                                    </a>
+                                                </div>
+                                                <div>4580</div>
+                                            </div>
+                                            <!-- Rating item end -->
+                                            <!-- Rating item start -->
+                                            <div class="d-flex justify-content-between fw-medium pb-3">
+                                                <div>
+                                                    <a href="#" class="text-primary text-decoration-none">
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <span> & Up</span>
+                                                    </a>
+                                                </div>
+                                                <div>450</div>
+                                            </div>
+                                            <!-- Rating item end -->
+                                            <!-- Rating item start -->
+                                            <div class="d-flex justify-content-between fw-medium pb-3">
+                                                <div>
+                                                    <a href="#" class="text-primary text-decoration-none">
+                                                        <i class="bi bi-star text-warning"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <span> & Up</span>
+                                                    </a>
+                                                </div>
+                                                <div>874</div>
+                                            </div>
+                                            <!-- Rating item end -->
+                                            <!-- Rating item start -->
+                                            <div class="d-flex justify-content-between fw-medium pb-3">
+                                                <div>
+                                                    <a href="#" class="text-primary text-decoration-none">
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <span> & Up</span>
+                                                    </a>
+                                                </div>
+                                                <div>8674</div>
+                                            </div>
+                                            <!-- Rating item end -->
+                                        </div>
+                                        <!-- Rating end -->
                                     </div>
-                                    <!-- Range end -->
-                                    <hr>
-                                    <!-- Category start -->
-                                    <div class="px-2 py-3 category-list">
-                                        <h5 class="fs-5">Category</h5>
-                                        <!-- Category item start -->
-                                        <div class="form-check user-select-none text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-1">
-                                            <label class="form-check-label w-100" for="cat-1">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Cell Phones</div>
-                                                    <div>1920</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Category item end -->
-                                        <!-- Category item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-2">
-                                            <label class="form-check-label w-100" for="cat-2">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Computers & Tablets</div>
-                                                    <div>750</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Category item end -->
-                                        <!-- Category item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-3">
-                                            <label class="form-check-label w-100" for="cat-3">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Cell Phone Accessories</div>
-                                                    <div>460</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Category item end -->
-                                        <!-- Category item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-4">
-                                            <label class="form-check-label w-100" for="cat-4">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Appliances</div>
-                                                    <div>781</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Category item end -->
-                                        <!-- Category item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-5">
-                                            <label class="form-check-label w-100" for="cat-5">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Audio</div>
-                                                    <div>840</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Category item end -->
-                                        <!-- Category item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-6">
-                                            <label class="form-check-label w-100" for="cat-6">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>iPhone Accessories</div>
-                                                    <div>1425</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Category item end -->
-                                        <!-- Category item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-7">
-                                            <label class="form-check-label w-100" for="cat-7">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Cameras & Camcorders</div>
-                                                    <div>45</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Category item end -->
-                                        <!-- Category item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-8">
-                                            <label class="form-check-label w-100" for="cat-8">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>iPhone Cases & Clips</div>
-                                                    <div>87</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Category item end -->
-                                        <!-- Category item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-9">
-                                            <label class="form-check-label w-100" for="cat-9">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>TV & Home Theater</div>
-                                                    <div>457</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Category item end -->
-                                        <!-- Category item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-10">
-                                            <label class="form-check-label w-100" for="cat-10">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Small Kitchen Appliances</div>
-                                                    <div>584</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Category item end -->
+                                    <div class="py-3 vuesax-clear-filter">
+                                        <a href=""
+                                            class="btn btn-block py-3 btn-secondary border-0 w-100 text-success fs-5 text-uppercase">clear
+                                            all filters</a>
                                     </div>
-                                    <!-- Category end -->
-                                    <hr>
-                                    <!-- Brand start -->
-                                    <div class="px-2 py-3 category-list">
-                                        <h5 class="fs-5">Bran</h5>
-                                        <!-- Brand item start -->
-                                        <div class="form-check user-select-none text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-1">
-                                            <label class="form-check-label w-100" for="cat-1">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Insigni</div>
-                                                    <div>1920</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Brand item end -->
-                                        <!-- Brand item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-2">
-                                            <label class="form-check-label w-100" for="cat-2">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Samsung</div>
-                                                    <div>750</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Brand item end -->
-                                        <!-- Brand item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-3">
-                                            <label class="form-check-label w-100" for="cat-3">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Apple</div>
-                                                    <div>460</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Brand item end -->
-                                        <!-- Brand item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-4">
-                                            <label class="form-check-label w-100" for="cat-4">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>HP</div>
-                                                    <div>781</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Brand item end -->
-                                        <!-- Brand item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-5">
-                                            <label class="form-check-label w-100" for="cat-5">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Sony</div>
-                                                    <div>840</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Brand item end -->
-                                        <!-- Brand item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-6">
-                                            <label class="form-check-label w-100" for="cat-6">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Metra</div>
-                                                    <div>1425</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Brand item end -->
-                                        <!-- Brand item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-7">
-                                            <label class="form-check-label w-100" for="cat-7">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Dyne</div>
-                                                    <div>45</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Brand item end -->
-                                        <!-- Brand item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-8">
-                                            <label class="form-check-label w-100" for="cat-8">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>LG</div>
-                                                    <div>87</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Brand item end -->
-                                        <!-- Brand item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-9">
-                                            <label class="form-check-label w-100" for="cat-9">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Canon</div>
-                                                    <div>457</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Brand item end -->
-                                        <!-- Brand item start -->
-                                        <div class="form-check user-select-none pt-3 text-primary">
-                                            <input class="form-check-input" type="checkbox" value="" id="cat-10">
-                                            <label class="form-check-label w-100" for="cat-10">
-                                                <div class="d-flex justify-content-between fw-medium">
-                                                    <div>Speck</div>
-                                                    <div>584</div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <!-- Brand item end -->
-                                    </div>
-                                    <!-- Brand end -->
-                                    <hr>
-                                    <!-- Rating start -->
-                                    <div class="px-2 py-3 category-list">
-                                        <h5 class="fs-5">Rating</h5>
-                                        <!-- Rating item start -->
-                                        <div class="d-flex justify-content-between fw-medium pb-3">
-                                            <div>
-                                                <a href="#" class="text-primary text-decoration-none">
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <span> & Up</span>
-                                                </a>
-                                            </div>
-                                            <div>8800</div>
-                                        </div>
-                                        <!-- Rating item end -->
-                                        <!-- Rating item start -->
-                                        <div class="d-flex justify-content-between fw-medium pb-3">
-                                            <div>
-                                                <a href="#" class="text-primary text-decoration-none">
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <span> & Up</span>
-                                                </a>
-                                            </div>
-                                            <div>3250</div>
-                                        </div>
-                                        <!-- Rating item end -->
-                                        <!-- Rating item start -->
-                                        <div class="d-flex justify-content-between fw-medium pb-3">
-                                            <div>
-                                                <a href="#" class="text-primary text-decoration-none">
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <span> & Up</span>
-                                                </a>
-                                            </div>
-                                            <div>4580</div>
-                                        </div>
-                                        <!-- Rating item end -->
-                                        <!-- Rating item start -->
-                                        <div class="d-flex justify-content-between fw-medium pb-3">
-                                            <div>
-                                                <a href="#" class="text-primary text-decoration-none">
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <span> & Up</span>
-                                                </a>
-                                            </div>
-                                            <div>450</div>
-                                        </div>
-                                        <!-- Rating item end -->
-                                        <!-- Rating item start -->
-                                        <div class="d-flex justify-content-between fw-medium pb-3">
-                                            <div>
-                                                <a href="#" class="text-primary text-decoration-none">
-                                                    <i class="bi bi-star text-warning"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <span> & Up</span>
-                                                </a>
-                                            </div>
-                                            <div>874</div>
-                                        </div>
-                                        <!-- Rating item end -->
-                                        <!-- Rating item start -->
-                                        <div class="d-flex justify-content-between fw-medium pb-3">
-                                            <div>
-                                                <a href="#" class="text-primary text-decoration-none">
-                                                    <i class="bi bi-star"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <i class="bi bi-star"></i>
-                                                    <span> & Up</span>
-                                                </a>
-                                            </div>
-                                            <div>8674</div>
-                                        </div>
-                                        <!-- Rating item end -->
-                                    </div>
-                                    <!-- Rating end -->
-                                </div>
-                            </aside>
+                                </aside>
+                            </div>
+                            <!-- Page side bar end -->
+                            <!-- product grid start -->
+                            <div class="col-md-9">
+
+                            </div>
+                            <!-- product grid end -->
                         </div>
-                    </div>
-                </section>
+                    </section>
+                    <!-- Content area end -->
+                </main>
             </div>
+            <!-- Main content start -->
         </div>
     </div>
 
