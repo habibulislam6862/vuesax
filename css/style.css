@@ -15,7 +15,7 @@ body {
   background-color: #f9f9f9;
 }
 .text-primary {
-  color: #2c2c2c !important;
+  color: hsl(0, 0%, 17%) !important;
 }
 .text-secondary {
   color: #6f64f8 !important;
@@ -27,8 +27,13 @@ body {
   background-color: #6f64f8 !important;
 }
 .btn-secondary {
-    background-color: #6f64f8 !important;
-  }
+  background-color: #6f64f8 !important;
+}
+.btn-check:focus + .btn-secondary,
+.btn-secondary:focus {
+  border: none;
+  box-shadow: initial !important;
+}
 .bg-success {
   background-color: #fff !important;
 }
@@ -55,16 +60,16 @@ h5 {
   box-shadow: 0px 2px 10px 0px #0000002b;
 }
 .form-check-input:checked {
-    background-color: #7e72f2;
-    border: none;
+  background-color: #7e72f2;
+  border: none;
 }
 .form-check-input:focus {
-    border-color: #7e72f2;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(126 114 242 / 25%);
+  border-color: #7e72f2;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(126 114 242 / 25%);
 }
 hr {
-    border: 1px solid #D6D6D6;
+  border: 1px solid #d6d6d6;
 }
 /*Main sidebar*/
 /**************/
@@ -98,7 +103,61 @@ hr {
   background: linear-gradient(224.53deg, #9e94ff 0%, #7e72f2 99.2%);
   border-radius: 4px;
 }
-
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #7e72f2;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(126, 114, 242, 0.25);
+}
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  vertical-align: initial;
+  content: "";
+  background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="hsl(0, 0%, 17%)" class="bi bi-chevron-down" viewBox="0 0 16 16"%3e %3cpath fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e');
+  height: 13px;
+  width: 10px;
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+  padding-left: initial;
+  border-top: initial;
+  border-right: initial;
+  border-bottom: initial;
+  border-left: initial;
+}
+.dropdown-toggle:focus {
+  box-shadow: 0px 2px 10px 0px #0000002b !important;
+}
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(
+    224.53deg,
+    #9e94ff 0%,
+    #7e72f2 99.2%
+  ) !important;
+}
 /*Header nav*/
 /************/
 .user {
