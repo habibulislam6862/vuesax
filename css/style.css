@@ -1,0 +1,273 @@
+/*Vuesax ecommerce template*/
+/***************************/
+
+/*Bootstrap icon import*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+/*Font import*/
+/***************************/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+/*font-family: 'Montserrat', sans-serif;*/
+
+/*Bootstrap magor style replace and bootstraping*/
+/******************************************/
+body {
+  background-color: #f9f9f9;
+}
+.text-primary {
+  color: #2c2c2c !important;
+}
+.text-secondary {
+  color: #6f64f8 !important;
+}
+.text-light {
+  color: #999999 !important;
+}
+.bg-secondary {
+  background-color: #6f64f8 !important;
+}
+.bg-success {
+  background-color: #fff !important;
+}
+.text-success {
+  color: white !important;
+}
+.fw-semibold {
+  font-weight: 600;
+}
+.fw-medium {
+  font-weight: 500;
+}
+.list-group-item {
+  border: none;
+}
+h5 {
+  line-height: 36px;
+  font-size: 14px;
+}
+.overflowy-scroll {
+  overflow-y: scroll;
+}
+.drop-box-shadow {
+  box-shadow: 0px 2px 10px 0px #0000002b;
+}
+.form-check-input:checked {
+    background-color: #7e72f2;
+    border: none;
+}
+.form-check-input:focus {
+    border-color: #7e72f2;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(126 114 242 / 25%);
+}
+hr {
+    border: 1px solid #D6D6D6;
+}
+/*Main sidebar*/
+/**************/
+.fixed-sidebar {
+  min-height: 0;
+  width: 16.667%;
+}
+.logo {
+  color: #7e72f2;
+}
+.accordion-button:not(.collapsed) {
+  color: #606060;
+  background-color: initial;
+  box-shadow: initial;
+}
+.accordion-button {
+  color: #606060;
+}
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: initial;
+}
+.rounded {
+  border-radius: 0.5rem;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.list-group-item.active {
+  background: linear-gradient(224.53deg, #9e94ff 0%, #7e72f2 99.2%);
+  border-radius: 4px;
+}
+
+/*Header nav*/
+/************/
+.user {
+  width: 34px;
+}
+.navbar {
+  height: 62px;
+}
+
+/*Page title, breadcrumb and settings*/
+/************************************/
+
+.title::after {
+  content: "";
+  height: 34px;
+  display: inline-block;
+  position: absolute;
+  right: -15px;
+  width: 1.7px;
+  background-color: #979797;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #2c2c2c;
+  content: var(--bs-breadcrumb-divider, "\203A\203A");
+  font-size: 20px;
+  margin-top: -4px;
+}
+.gear {
+  height: 40px;
+  width: 40px;
+}
+
+/*Double range slider*/
+/********************/
+
+.multi-range-slider {
+  position: relative;
+  height: 20px;
+  display: block;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  margin: 0;
+  pointer-events: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  -webkit-appearance: none;
+  cursor: pointer;
+  border: 0 none;
+  width: 15px;
+  height: 15px;
+  background-color: #6f64f8;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(111, 100, 248, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+/* All the same stuff for Firefox */
+input[type="range"]::-moz-range-thumb {
+  pointer-events: all;
+  cursor: pointer;
+  border: 0 none;
+  width: 15px;
+  height: 15px;
+  background-color: #6f64f8;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(111, 100, 248, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+input[type="range"]::-moz-focus-outer {
+  border: 0;
+}
+/* All the same stuff for IE */
+input[type="range"]::-ms-thumb {
+  pointer-events: all;
+  border: 0 none;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(111, 100, 248);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(111, 100, 248, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+input[type="range"].hover::-webkit-slider-thumb {
+  box-shadow: 0 0 0 10px rgba(111, 100, 248, 0.1);
+}
+input[type="range"].hover::-moz-range-thumb {
+  box-shadow: 0 0 0 10px rgba(111, 100, 248, 0.1);
+}
+input[type="range"].hover::-ms-thumb {
+  box-shadow: 0 0 0 10px rgba(111, 100, 248, 0.1);
+}
+input[type="range"].active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 20px rgba(111, 100, 248, 0.2);
+}
+input[type="range"].active::-moz-range-thumb {
+  box-shadow: 0 0 0 20px rgba(111, 100, 248, 0.2);
+}
+input[type="range"].active::-ms-thumb {
+  box-shadow: 0 0 0 20px rgba(111, 100, 248, 0.2);
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background: transparent;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+}
+input[type="range"]::-moz-range-track {
+  background: transparent;
+}
+input[type="range"]::-ms-track {
+  background: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: transparent;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: transparent;
+}
+input[type="range"]::-ms-fill-upper {
+  background: transparent;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: transparent;
+}
+.slider {
+  position: absolute;
+  width: 100%;
+  top: 7px;
+  z-index: 1;
+  height: 6px;
+}
+.slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #ededed;
+}
+.slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #6f64f8;
+}
