@@ -357,7 +357,9 @@ input[type="range"]:focus::-ms-fill-upper {
 /*************/
 .card-img-top {
     height: 270px;
-    width: fit-content
+    width: fit-content;
+    block-size: fit-content;
+    width: -moz-fit-content;
 }
 .page-item:last-child .page-link {
   border-top-right-radius: 1rem;
