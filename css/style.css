@@ -359,3 +359,29 @@ input[type="range"]:focus::-ms-fill-upper {
     height: 270px;
     width: fit-content
 }
+.page-item:last-child .page-link {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.page-item:first-child .page-link {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.page-link, .pagination-jump a {
+  color: hsl(0, 0%, 17%) 
+}
+.page-link:hover,.pagination-jump:hover  {
+  background-color: #6F64F8!important;
+}
+.page-link:hover, .pagination-jump:hover a {
+  color: white;
+}
+.page-link:hover {
+  border-radius: 50%!important;
+  border: none
+}
+.pagination {
+  border-radius: 1rem;
+  background-color: #EDEDED;
+}
