@@ -78,3 +78,7 @@ inputRight.addEventListener("touchstart", (e) => {
 inputRight.addEventListener("touchend", (e) => {
   inputRight.classList.remove("active");
 });
+//search
+document.getElementById('search').addEventListener('click', function(){
+  document.getElementById('search-box').focus();
+});
