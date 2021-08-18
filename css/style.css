@@ -385,3 +385,10 @@ input[type="range"]:focus::-ms-fill-upper {
   border-radius: 1rem;
   background-color: #EDEDED;
 }
+.page-link:focus {
+  z-index: initial;
+  background-color: initial;
+  outline: 0;
+  box-shadow: none;
+  border: none!important;
+}
