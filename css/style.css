@@ -16,7 +16,10 @@ body {
   font-family: 'Montserrat', sans-serif
 }
 .z-top {
-  z-index: 1000;
+  z-index: 5;
+}
+.z-top-next {
+  z-index: 10;
 }
 .text-primary {
   color: hsl(0, 0%, 17%) !important;
@@ -487,4 +490,11 @@ label[for*=cat-]>.d-flex {
   .bg-md-trans {
     background-color: transparent!important;
   }
+  
 }
+@media (max-width: 768px) {
+  .title::after {
+    display: none!important;
+  }
+}
+
