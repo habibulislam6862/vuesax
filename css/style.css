@@ -51,7 +51,8 @@ body {
 .btn-check:focus + .btn-secondary,
 .btn-secondary:focus {
   border: none;
-  box-shadow: initial !important;
+  -webkit-box-shadow: initial !important;
+          box-shadow: initial !important;
 }
 .bg-success {
   background-color: #fff !important;
@@ -82,7 +83,8 @@ small {
     font-size: 12px!important;
 }
 .drop-box-shadow {
-  box-shadow: 0px 2px 10px 0px #0000002b;
+  -webkit-box-shadow: 0px 2px 10px 0px #0000002b;
+          box-shadow: 0px 2px 10px 0px #0000002b;
 }
 .form-check-input:checked {
   background-color: #7e72f2;
@@ -91,7 +93,8 @@ small {
 .form-check-input:focus {
   border-color: #7e72f2;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(126 114 242 / 25%);
+  -webkit-box-shadow: 0 0 0 0.25rem rgb(126 114 242 / 25%);
+          box-shadow: 0 0 0 0.25rem rgb(126 114 242 / 25%);
 }
 hr {
   border: 1px solid #d6d6d6;
@@ -108,7 +111,8 @@ hr {
 .accordion-button:not(.collapsed) {
   color: #606060;
   background-color: initial;
-  box-shadow: initial;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
 }
 .accordion-button {
   color: #606060;
@@ -116,7 +120,8 @@ hr {
 .accordion-button:focus {
   z-index: 3;
   outline: 0;
-  box-shadow: initial;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
 }
 .rounded {
   border-radius: 0.5rem!important;
@@ -125,6 +130,7 @@ hr {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 .list-group-item.active {
+  background: -o-linear-gradient(225.47deg, #9e94ff 0%, #7e72f2 99.2%);
   background: linear-gradient(224.53deg, #9e94ff 0%, #7e72f2 99.2%);
   border-radius: 4px;
 }
@@ -133,7 +139,8 @@ hr {
   background-color: #fff;
   border-color: #7e72f2;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(126, 114, 242, 0.25);
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(126, 114, 242, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(126, 114, 242, 0.25);
 }
 /* clears the ‘X’ from Internet Explorer */
 input[type="search"]::-ms-clear {
@@ -169,7 +176,8 @@ input[type="search"]::-webkit-search-results-decoration {
   border-left: initial;
 }
 .dropdown-toggle:focus {
-  box-shadow: 0px 2px 10px 0px #0000002b !important;
+  -webkit-box-shadow: 0px 2px 10px 0px #0000002b !important;
+          box-shadow: 0px 2px 10px 0px #0000002b !important;
 }
 .dropdown-item.active,
 .dropdown-item:active,
@@ -177,6 +185,11 @@ input[type="search"]::-webkit-search-results-decoration {
 .dropdown-item:hover {
   color: #fff;
   text-decoration: none;
+  background-image: -o-linear-gradient(
+    225.47deg,
+    #9e94ff 0%,
+    #7e72f2 99.2%
+  ) !important;
   background-image: linear-gradient(
     224.53deg,
     #9e94ff 0%,
@@ -265,8 +278,12 @@ input[type="range"]::-webkit-slider-thumb {
   height: 15px;
   background-color: #6f64f8;
   border-radius: 50%;
-  box-shadow: 0 0 0 0 rgba(111, 100, 248, 0.1);
+  -webkit-box-shadow: 0 0 0 0 rgba(111, 100, 248, 0.1);
+          box-shadow: 0 0 0 0 rgba(111, 100, 248, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 /* All the same stuff for Firefox */
 input[type="range"]::-moz-range-thumb {
@@ -278,6 +295,7 @@ input[type="range"]::-moz-range-thumb {
   background-color: #6f64f8;
   border-radius: 50%;
   box-shadow: 0 0 0 0 rgba(111, 100, 248, 0.1);
+  -moz-transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
 }
 input[type="range"]::-moz-focus-outer {
@@ -293,10 +311,12 @@ input[type="range"]::-ms-thumb {
   background-color: rgb(111, 100, 248);
   border-radius: 50%;
   box-shadow: 0 0 0 0 rgba(111, 100, 248, 0.1);
+  -ms-transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
 }
 input[type="range"].hover::-webkit-slider-thumb {
-  box-shadow: 0 0 0 10px rgba(111, 100, 248, 0.1);
+  -webkit-box-shadow: 0 0 0 10px rgba(111, 100, 248, 0.1);
+          box-shadow: 0 0 0 10px rgba(111, 100, 248, 0.1);
 }
 input[type="range"].hover::-moz-range-thumb {
   box-shadow: 0 0 0 10px rgba(111, 100, 248, 0.1);
@@ -305,7 +325,8 @@ input[type="range"].hover::-ms-thumb {
   box-shadow: 0 0 0 10px rgba(111, 100, 248, 0.1);
 }
 input[type="range"].active::-webkit-slider-thumb {
-  box-shadow: 0 0 0 20px rgba(111, 100, 248, 0.2);
+  -webkit-box-shadow: 0 0 0 20px rgba(111, 100, 248, 0.2);
+          box-shadow: 0 0 0 20px rgba(111, 100, 248, 0.2);
 }
 input[type="range"].active::-moz-range-thumb {
   box-shadow: 0 0 0 20px rgba(111, 100, 248, 0.2);
@@ -365,13 +386,18 @@ input[type="range"]:focus::-ms-fill-upper {
   background-color: #6f64f8;
 }
 label[for*=cat-]>.d-flex {
-  column-gap: 10px!important;
+  -webkit-column-gap: 10px!important;
+     -moz-column-gap: 10px!important;
+          column-gap: 10px!important;
 }
 
 /*Product grid*/
 /*************/
 .card-img-top {
+    width: -webkit-fit-content;
     width: fit-content;
+    block-size: -webkit-fit-content;
+    block-size: -moz-fit-content;
     block-size: fit-content;
     width: -moz-fit-content;
 }
@@ -405,14 +431,19 @@ label[for*=cat-]>.d-flex {
   z-index: initial;
   background-color: initial;
   outline: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: none!important;
 }
 
 /* Offcanvas style */
 /******************/
 .offcanvas-collapse, .offcanvas-start {
+  -webkit-transition: .3s ease-in-out,  -webkit-transform .3s ease-in-out;
+  transition: .3s ease-in-out,  -webkit-transform .3s ease-in-out;
+  -o-transition: transform .3s ease-in-out,  .3s ease-in-out;
   transition: transform .3s ease-in-out,  .3s ease-in-out;
+  transition: transform .3s ease-in-out,  .3s ease-in-out,  -webkit-transform .3s ease-in-out;
 }
 
 @media (max-width: 1199.98px) {
@@ -431,7 +462,9 @@ label[for*=cat-]>.d-flex {
   }
   .offcanvas-collapse.open {
     visibility: visible;
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   
 }
@@ -448,7 +481,8 @@ label[for*=cat-]>.d-flex {
     width: initial!important;
   }
   .drop-box-shadow-md-none {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .bg-md-trans {
     background-color: transparent!important;
