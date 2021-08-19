@@ -19,168 +19,172 @@
 <body>
 
     <div class="container-fluid">
-        <div class="row">
-            <!-- Main sidebar start -->
-            <div class="col-md-2 g-0">
-                <!-- Sidebar options start -->
-                <aside
-                    class="bg-success fixed-sidebar drop-box-shadow position-fixed overflowy-scroll start-0 top-0 bottom-0">
-                    <div class="dash-control p-3 d-flex flex-column">
-                        <div class="logo d-flex justify-content-between">
+        <!-- Main sidebar start -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="options">
+            <!-- Sidebar options start -->
+            <aside
+                class="bg-success fixed-sidebar img-fluid drop-box-shadow position-fixed overflowy-scroll start-0 top-0 bottom-0">
+                <div class="dash-control p-3 d-flex flex-column position-relative">
+                    <div class="logo d-flex justify-content-between align-items-center sticky-top bg-primary ">
+                        <div>
                             <img src="images/logo.png" alt="logo" class="img-fluid">
-                            <i class="bi bi-record-circle"></i>
                         </div>
-                        <!-- Dashboard start -->
-                        <div class="accordion" id="dashboard">
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button ps-0 ps-3 text-primary fw-semibold" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        <i class="bi bi-house-fill me-2"></i>
-                                        Dashboard
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show "
-                                    aria-labelledby="headingOne" data-bs-parent="#dashboard">
-                                    <div class="accordion-body p-0">
-                                        <!-- dashboard item start -->
-                                        <div class="list-group" id="list-tab" role="tablist">
-                                            <a class="list-group-item list-group-item-action border-0 list-group-item-action active"
-                                                id="list-analytics-list" data-bs-toggle="list" href="#list-analytics"
-                                                role="tab" aria-controls="list-home">
-                                                <i class="bi bi-record-circle me-2"></i>Analytics</a>
-                                            <a class="list-group-item list-group-item-action border-0 list-group-item-action"
-                                                id="list-ecommerce-list" data-bs-toggle="list" href="#list-ecommerce"
-                                                role="tab" aria-controls="list-ecommerce">
-                                                <i class="bi bi-record-circle me-2"></i>eCommerce</a>
-                                        </div>
-                                        <!-- dashboard item end -->
+                        <div>
+                            <i class="bi bi-x-circle-fill fs-2" data-bs-dismiss="offcanvas" style="cursor: pointer"></i>
+                        </div>
+                    </div>
+                    <!-- Dashboard start -->
+                    <div class="accordion" id="dashboard">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button ps-0 ps-3 text-primary fw-semibold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <i class="bi bi-house-fill me-2"></i>
+                                    Dashboard
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
+                                data-bs-parent="#dashboard">
+                                <div class="accordion-body p-0">
+                                    <!-- dashboard item start -->
+                                    <div class="list-group" id="list-tab" role="tablist">
+                                        <a class="list-group-item list-group-item-action border-0 list-group-item-action active"
+                                            id="list-analytics-list" data-bs-toggle="list" href="#list-analytics"
+                                            role="tab" aria-controls="list-home">
+                                            <i class="bi bi-record-circle me-2"></i>Analytics</a>
+                                        <a class="list-group-item list-group-item-action border-0 list-group-item-action"
+                                            id="list-ecommerce-list" data-bs-toggle="list" href="#list-ecommerce"
+                                            role="tab" aria-controls="list-ecommerce">
+                                            <i class="bi bi-record-circle me-2"></i>eCommerce</a>
                                     </div>
+                                    <!-- dashboard item end -->
                                 </div>
                             </div>
                         </div>
-                        <!-- Dashboard end -->
-                        <!-- Apps start -->
-                        <div>
-                            <h5 class="text-uppercase text-light ps-3 mb-0">apps</h5>
-                            <ul class="list-group fw-semibold">
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-envelope me-2"></i>Email</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-chat-dots me-2"></i>Chat</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-check2-square me-2"></i>Todo</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-calendar-check me-2"></i>Calendar</a>
-                            </ul>
-                        </div>
-                        <!-- Apps end -->
-                        <!-- UI elements start -->
-                        <div>
-                            <h5 class="text-uppercase text-light ps-3 mb-0">UI elements</h5>
-                            <ul class="list-group fw-semibold">
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-columns me-2"></i>Grid</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-palette me-2"></i>Color</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-wallet2 me-2"></i>Card</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-table me-2"></i>Table</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-puzzle me-2"></i>Component</a>
-                            </ul>
-                        </div>
-                        <!-- UI elements end -->
-                        <!-- Forms start -->
-                        <div>
-                            <h5 class="text-uppercase text-light ps-3 mb-0">Forms</h5>
-                            <ul class="list-group fw-semibold">
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-files me-2"></i>Form elements</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-layout-sidebar me-2"></i>Form loyouts</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-file-earmark me-2"></i>Form Wizard</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-check2-circle me-2"></i>Form Validation</a>
-                            </ul>
-                        </div>
-                        <!-- Forms end -->
-                        <!-- Pages start -->
-                        <div>
-                            <h5 class="text-uppercase text-light ps-3 mb-0">Pages</h5>
-                            <ul class="list-group fw-semibold">
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-lock me-2"></i>Authentication</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-clock me-2"></i>Coming Soon</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-exclamation-triangle me-2"></i>Error</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-hourglass me-2"></i>Maintenance</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-person me-2"></i>Profile</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-question-circle me-2"></i>FAQ</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-shield-plus me-2"></i>Knowledge</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-file-earmark-check me-2"></i>Base</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-search me-2"></i>Search</a>
-
-                            </ul>
-                        </div>
-                        <!-- Pages end -->
-                        <!-- Charts & Maps start -->
-                        <div>
-                            <h5 class="text-uppercase text-light ps-3 mb-0">Charts & Maps</h5>
-                            <ul class="list-group fw-semibold">
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-graph-up me-2"></i>Charts</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-geo-alt me-2"></i>Google Maps</a>
-                            </ul>
-                        </div>
-                        <!-- Charts & Maps end -->
-                        <!-- Extensions start -->
-                        <div>
-                            <h5 class="text-uppercase text-light ps-3 mb-0">Extensions</h5>
-                            <ul class="list-group fw-semibold">
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-check2-all me-2"></i>Select</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-pencil-square me-2"></i>Quill Editor</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-droplet me-2"></i>Drag & Drop</a>
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-calendar2-minus me-2"></i>Datepicker</a>
-                            </ul>
-                        </div>
-                        <!-- Extensions end -->
-                        <!-- Others start -->
-                        <div>
-                            <h5 class="text-uppercase text-light ps-3 mb-0">Others</h5>
-                            <ul class="list-group fw-semibold">
-                                <a href="#" class="list-group-item list-group-item-action"><i
-                                        class="bi bi-list me-2"></i>Menu Labels</a>
-                                <a href="#" class="list-group-item list-group-item-action disabled"><i
-                                        class="bi bi-eye-slash me-2"></i>Disabled menu</a>
-                            </ul>
-                        </div>
-                        <!-- Others end -->
                     </div>
-                </aside>
-                <!-- Sidebar options end -->
-            </div>
-            <!-- Main sidebar end -->
-            <!-- ----------------- -->
+                    <!-- Dashboard end -->
+                    <!-- Apps start -->
+                    <div>
+                        <h5 class="text-uppercase text-light ps-3 mb-0">apps</h5>
+                        <ul class="list-group fw-semibold">
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-envelope me-2"></i>Email</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-chat-dots me-2"></i>Chat</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-check2-square me-2"></i>Todo</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-calendar-check me-2"></i>Calendar</a>
+                        </ul>
+                    </div>
+                    <!-- Apps end -->
+                    <!-- UI elements start -->
+                    <div>
+                        <h5 class="text-uppercase text-light ps-3 mb-0">UI elements</h5>
+                        <ul class="list-group fw-semibold">
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-columns me-2"></i>Grid</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-palette me-2"></i>Color</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-wallet2 me-2"></i>Card</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-table me-2"></i>Table</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-puzzle me-2"></i>Component</a>
+                        </ul>
+                    </div>
+                    <!-- UI elements end -->
+                    <!-- Forms start -->
+                    <div>
+                        <h5 class="text-uppercase text-light ps-3 mb-0">Forms</h5>
+                        <ul class="list-group fw-semibold">
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-files me-2"></i>Form elements</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-layout-sidebar me-2"></i>Form loyouts</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-file-earmark me-2"></i>Form Wizard</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-check2-circle me-2"></i>Form Validation</a>
+                        </ul>
+                    </div>
+                    <!-- Forms end -->
+                    <!-- Pages start -->
+                    <div>
+                        <h5 class="text-uppercase text-light ps-3 mb-0">Pages</h5>
+                        <ul class="list-group fw-semibold">
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-lock me-2"></i>Authentication</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-clock me-2"></i>Coming Soon</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-exclamation-triangle me-2"></i>Error</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-hourglass me-2"></i>Maintenance</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-person me-2"></i>Profile</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-question-circle me-2"></i>FAQ</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-shield-plus me-2"></i>Knowledge</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-file-earmark-check me-2"></i>Base</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-search me-2"></i>Search</a>
+
+                        </ul>
+                    </div>
+                    <!-- Pages end -->
+                    <!-- Charts & Maps start -->
+                    <div>
+                        <h5 class="text-uppercase text-light ps-3 mb-0">Charts & Maps</h5>
+                        <ul class="list-group fw-semibold">
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-graph-up me-2"></i>Charts</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-geo-alt me-2"></i>Google Maps</a>
+                        </ul>
+                    </div>
+                    <!-- Charts & Maps end -->
+                    <!-- Extensions start -->
+                    <div>
+                        <h5 class="text-uppercase text-light ps-3 mb-0">Extensions</h5>
+                        <ul class="list-group fw-semibold">
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-check2-all me-2"></i>Select</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-pencil-square me-2"></i>Quill Editor</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-droplet me-2"></i>Drag & Drop</a>
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-calendar2-minus me-2"></i>Datepicker</a>
+                        </ul>
+                    </div>
+                    <!-- Extensions end -->
+                    <!-- Others start -->
+                    <div>
+                        <h5 class="text-uppercase text-light ps-3 mb-0">Others</h5>
+                        <ul class="list-group fw-semibold">
+                            <a href="#" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-list me-2"></i>Menu Labels</a>
+                            <a href="#" class="list-group-item list-group-item-action disabled"><i
+                                    class="bi bi-eye-slash me-2"></i>Disabled menu</a>
+                        </ul>
+                    </div>
+                    <!-- Others end -->
+                </div>
+            </aside>
+            <!-- Sidebar options end -->
+        </div>
+        <!-- Main sidebar end -->
+        <!-- ----------------- -->
+        <div class="row">
             <!-- Main content start -->
-            <div class="col-md-10 ps-0">
+            <div class="col-md-12 ps-0">
                 <header class="p-4">
-                    <nav class="navbar drop-box-shadow bg-success navbar-expand-lg navbar-light bg-light rounded">
+                    <nav class="navbar drop-box-shadow bg-success navbar-expand navbar-light bg-light rounded">
                         <div class="container-fluid">
                             <!-- left menu start -->
                             <ul class="list-inline mb-0 fs-5">
@@ -214,10 +218,11 @@
                                     <li class="nav-item">
                                         <a class="nav-link text-primary" href="#"><i class="bi bi-bell"></i></a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-primary" id='search' href="#"><i class="bi bi-search"></i></a>
+                                    <li class="nav-item d-lg-block d-none">
+                                        <a class="nav-link text-primary" id='search' href="#"><i
+                                                class="bi bi-search"></i></a>
                                     </li>
-                                    <li class="nav-item ps-4">
+                                    <li class="nav-item ps-3">
                                         <a class="nav-link text-primary" href="#">
                                             <div class="d-flex flex-column justify-content-center align-items-center ">
                                                 <div>
@@ -261,9 +266,9 @@
                                 <!-- breadcrumb end -->
                             </div>
                             <div>
-                                <div
-                                    class="rounded-circle bg-secondary gear fs-4 d-flex justify-content-center align-items-center">
-                                    <a href="" class="text-success"><i class="bi bi-gear"></i></a>
+                                <div class="rounded-circle bg-secondary gear fs-4 d-flex justify-content-center align-items-center"
+                                    style="cursor: pointer" data-bs-target="#options" data-bs-toggle="offcanvas">
+                                    <i class="bi bi-gear text-success"></i>
                                 </div>
                             </div>
                         </div>
@@ -273,375 +278,431 @@
                     <section class="px-4 pt-4">
                         <div class="row">
                             <!-- Page side bar start -->
-                            <div class="col-md-3 pt-4">
-                                <h5 class="text-primary fs-5">Filters</h5>
-                                <aside class="pt-3">
-                                    <div class="bg-success drop-box-shadow rounded d-flex flex-column p-2">
-                                        <!-- Range start -->
-                                        <div class="px-2 py-3 range-slider vuesax-range">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div>
-                                                    <h5 class="mb-0">Multi Range</h5>
-                                                </div>
-                                                <div class="fw-semibold">
-                                                    <!-- range value -->
-                                                    $<span class="price-from"></span> - $<span class="price-to"></span>
-                                                </div>
-                                            </div>
-                                            <!-- Range slider start -->
-                                            <div class="multi-range-slider">
-                                                <input type="range" id="input-left" min="0" step="50" max="1000"
-                                                    value="300">
-                                                <input type="range" id="input-right" min="0" step="50" max="1000"
-                                                    value="400">
+                            <div class="col-xl-3 col-12 pt-4">
 
-                                                <div class="slider">
-                                                    <div class="track"></div>
-                                                    <div class="range"></div>
-                                                </div>
-                                            </div>
-                                            <!-- Range slider end -->
+
+                                <nav class="pb-4 pt-0 navbar justify-content-start align-items-center navbar-expand-xl flex-xl-wrap d-xl-block navbar-light"
+                                    aria-label="Main navigation">
+
+                                    <div class="border border-xl-0 border-2 px-3 px-xl-0 py-xl-0 py-1 filter">
+                                        <div class="d-flex align-items-center">
+                                            <div class="navbar-toggler p-0 border-0 navbarSideCollapse" type="button"
+                                            aria-label="Toggle navigation">
+                                            <i class="bi bi-filter fs-5 "></i>
                                         </div>
-                                        <!-- Range end -->
-                                        <hr>
-                                        <!-- Category start -->
-                                        <div class="px-2 py-3 vuesax-list">
-                                            <h5 class="fs-5">Category</h5>
-                                            <!-- Category item start -->
-                                            <div class="form-check user-select-none text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="cat-1">
-                                                <label class="form-check-label w-100" for="cat-1">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Cell Phones</div>
-                                                        <div>1920</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Category item end -->
-                                            <!-- Category item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="cat-2">
-                                                <label class="form-check-label w-100" for="cat-2">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Computers & Tablets</div>
-                                                        <div>750</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Category item end -->
-                                            <!-- Category item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="cat-3">
-                                                <label class="form-check-label w-100" for="cat-3">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Cell Phone Accessories</div>
-                                                        <div>460</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Category item end -->
-                                            <!-- Category item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="cat-4">
-                                                <label class="form-check-label w-100" for="cat-4">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Appliances</div>
-                                                        <div>781</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Category item end -->
-                                            <!-- Category item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="cat-5">
-                                                <label class="form-check-label w-100" for="cat-5">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Audio</div>
-                                                        <div>840</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Category item end -->
-                                            <!-- Category item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="cat-6">
-                                                <label class="form-check-label w-100" for="cat-6">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>iPhone Accessories</div>
-                                                        <div>1425</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Category item end -->
-                                            <!-- Category item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="cat-7">
-                                                <label class="form-check-label w-100" for="cat-7">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Cameras & Camcorders</div>
-                                                        <div>45</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Category item end -->
-                                            <!-- Category item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="cat-8">
-                                                <label class="form-check-label w-100" for="cat-8">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>iPhone Cases & Clips</div>
-                                                        <div>87</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Category item end -->
-                                            <!-- Category item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="cat-9">
-                                                <label class="form-check-label w-100" for="cat-9">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>TV & Home Theater</div>
-                                                        <div>457</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Category item end -->
-                                            <!-- Category item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="cat-10">
-                                                <label class="form-check-label w-100" for="cat-10">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Small Kitchen Appliances</div>
-                                                        <div>584</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Category item end -->
+                                        <h5 class="text-xl-primary mb-0 ms-2 ms-xl-0 fs-5 navbarSideCollapse" style="margin-bottom: 6px;">
+                                            Filters</h5>
                                         </div>
-                                        <!-- Category end -->
-                                        <hr>
-                                        <!-- Brand start -->
-                                        <div class="px-2 py-3 vuesax-list">
-                                            <h5 class="fs-5">Brand</h5>
-                                            <!-- Brand item start -->
-                                            <div class="form-check user-select-none text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="brand-1">
-                                                <label class="form-check-label w-100" for="brand-1">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Insigni</div>
-                                                        <div>1920</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Brand item end -->
-                                            <!-- Brand item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="brand-2">
-                                                <label class="form-check-label w-100" for="brand-2">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Samsung</div>
-                                                        <div>750</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Brand item end -->
-                                            <!-- Brand item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="brand-3">
-                                                <label class="form-check-label w-100" for="brand-3">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Apple</div>
-                                                        <div>460</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Brand item end -->
-                                            <!-- Brand item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="brand-4">
-                                                <label class="form-check-label w-100" for="brand-4">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>HP</div>
-                                                        <div>781</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Brand item end -->
-                                            <!-- Brand item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="brand-5">
-                                                <label class="form-check-label w-100" for="brand-5">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Sony</div>
-                                                        <div>840</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Brand item end -->
-                                            <!-- Brand item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="brand-6">
-                                                <label class="form-check-label w-100" for="brand-6">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Metra</div>
-                                                        <div>1425</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Brand item end -->
-                                            <!-- Brand item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="brand-7">
-                                                <label class="form-check-label w-100" for="brand-7">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Dyne</div>
-                                                        <div>45</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Brand item end -->
-                                            <!-- Brand item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="brand-8">
-                                                <label class="form-check-label w-100" for="brand-8">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>LG</div>
-                                                        <div>87</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Brand item end -->
-                                            <!-- Brand item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="brand-9">
-                                                <label class="form-check-label w-100" for="brand-9">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Canon</div>
-                                                        <div>457</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Brand item end -->
-                                            <!-- Brand item start -->
-                                            <div class="form-check user-select-none pt-3 text-primary">
-                                                <input class="form-check-input" type="checkbox" value="" id="brand-10">
-                                                <label class="form-check-label w-100" for="brand-10">
-                                                    <div class="d-flex justify-content-between fw-medium">
-                                                        <div>Speck</div>
-                                                        <div>584</div>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <!-- Brand item end -->
-                                        </div>
-                                        <!-- Brand end -->
-                                        <hr>
-                                        <!-- Rating start -->
-                                        <div class="px-2 py-3 vuesax-rating">
-                                            <h5 class="fs-5">Rating</h5>
-                                            <!-- Rating item start -->
-                                            <div class="d-flex justify-content-between fw-medium pb-3">
-                                                <div>
-                                                    <a href="#" class="text-primary text-decoration-none">
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <span> & Up</span>
-                                                    </a>
-                                                </div>
-                                                <div>8800</div>
-                                            </div>
-                                            <!-- Rating item end -->
-                                            <!-- Rating item start -->
-                                            <div class="d-flex justify-content-between fw-medium pb-3">
-                                                <div>
-                                                    <a href="#" class="text-primary text-decoration-none">
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <span> & Up</span>
-                                                    </a>
-                                                </div>
-                                                <div>3250</div>
-                                            </div>
-                                            <!-- Rating item end -->
-                                            <!-- Rating item start -->
-                                            <div class="d-flex justify-content-between fw-medium pb-3">
-                                                <div>
-                                                    <a href="#" class="text-primary text-decoration-none">
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <span> & Up</span>
-                                                    </a>
-                                                </div>
-                                                <div>4580</div>
-                                            </div>
-                                            <!-- Rating item end -->
-                                            <!-- Rating item start -->
-                                            <div class="d-flex justify-content-between fw-medium pb-3">
-                                                <div>
-                                                    <a href="#" class="text-primary text-decoration-none">
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <span> & Up</span>
-                                                    </a>
-                                                </div>
-                                                <div>450</div>
-                                            </div>
-                                            <!-- Rating item end -->
-                                            <!-- Rating item start -->
-                                            <div class="d-flex justify-content-between fw-medium pb-3">
-                                                <div>
-                                                    <a href="#" class="text-primary text-decoration-none">
-                                                        <i class="bi bi-star text-warning"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <span> & Up</span>
-                                                    </a>
-                                                </div>
-                                                <div>874</div>
-                                            </div>
-                                            <!-- Rating item end -->
-                                            <!-- Rating item start -->
-                                            <div class="d-flex justify-content-between fw-medium pb-3">
-                                                <div>
-                                                    <a href="#" class="text-primary text-decoration-none">
-                                                        <i class="bi bi-star"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <i class="bi bi-star"></i>
-                                                        <span> & Up</span>
-                                                    </a>
-                                                </div>
-                                                <div>8674</div>
-                                            </div>
-                                            <!-- Rating item end -->
-                                        </div>
-                                        <!-- Rating end -->
                                     </div>
-                                    <div class="py-3 vuesax-clear-filter">
-                                        <a href=""
-                                            class="btn btn-block py-3 btn-secondary border-0 w-100 text-success fs-5 text-uppercase">clear
-                                            all filters</a>
+
+                                    <div class="navbar-collapse offcanvas-collapse pt-xl-4" style="display: block!important;"
+                                        id="navbarsExampleDefault">
+                                        <aside class="bg-primary position-relative">
+                                            <div id="sidebar-toggle"
+                                                class="rounded-circle fs-1 d-block d-xl-none bg-primary text-primary position-absolute top-0 end-0 pe-3"
+                                                style="cursor: pointer;">
+                                                <i class="bi bi-x-circle-fill"></i>
+                                            </div>
+                                            <div class="bg-success drop-box-shadow rounded d-flex flex-column px-2">
+                                                <!-- Range start -->
+                                                <div class="px-2 py-3 range-slider vuesax-range">
+                                                    <div
+                                                        class="d-flex flex-xl-row flex-column justify-content-xl-between align-items-xl-center">
+                                                        <div>
+                                                            <h5 class="mb-0">Multi Range</h5>
+                                                        </div>
+                                                        <div class="fw-semibold">
+                                                            <!-- range value -->
+                                                            $<span class="price-from"></span> - $<span
+                                                                class="price-to"></span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Range slider start -->
+                                                    <div class="multi-range-slider">
+                                                        <input type="range" id="input-left" min="0" step="50" max="1000"
+                                                            value="300">
+                                                        <input type="range" id="input-right" min="0" step="50"
+                                                            max="1000" value="400">
+
+                                                        <div class="slider">
+                                                            <div class="track"></div>
+                                                            <div class="range"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Range slider end -->
+                                                </div>
+                                                <!-- Range end -->
+                                                <hr>
+                                                <!-- Category start -->
+                                                <div class="px-2 py-3 vuesax-list">
+                                                    <h5 class="fs-5">Category</h5>
+                                                    <!-- Category item start -->
+                                                    <div class="form-check user-select-none text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cat-1">
+                                                        <label class="form-check-label w-100" for="cat-1">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Cell Phones</div>
+                                                                <div>1920</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Category item end -->
+                                                    <!-- Category item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cat-2">
+                                                        <label class="form-check-label w-100" for="cat-2">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Computers & Tablets</div>
+                                                                <div>750</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Category item end -->
+                                                    <!-- Category item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cat-3">
+                                                        <label class="form-check-label w-100" for="cat-3">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Cell Phone Accessories</div>
+                                                                <div>460</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Category item end -->
+                                                    <!-- Category item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cat-4">
+                                                        <label class="form-check-label w-100" for="cat-4">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Appliances</div>
+                                                                <div>781</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Category item end -->
+                                                    <!-- Category item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cat-5">
+                                                        <label class="form-check-label w-100" for="cat-5">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Audio</div>
+                                                                <div>840</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Category item end -->
+                                                    <!-- Category item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cat-6">
+                                                        <label class="form-check-label w-100" for="cat-6">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>iPhone Accessories</div>
+                                                                <div>1425</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Category item end -->
+                                                    <!-- Category item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cat-7">
+                                                        <label class="form-check-label w-100" for="cat-7">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Cameras & Camcorders</div>
+                                                                <div>45</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Category item end -->
+                                                    <!-- Category item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cat-8">
+                                                        <label class="form-check-label w-100" for="cat-8">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>iPhone Cases & Clips</div>
+                                                                <div>87</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Category item end -->
+                                                    <!-- Category item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cat-9">
+                                                        <label class="form-check-label w-100" for="cat-9">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>TV & Home Theater</div>
+                                                                <div>457</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Category item end -->
+                                                    <!-- Category item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="cat-10">
+                                                        <label class="form-check-label w-100" for="cat-10">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Small Kitchen Appliances</div>
+                                                                <div>584</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Category item end -->
+                                                </div>
+                                                <!-- Category end -->
+                                                <hr>
+                                                <!-- Brand start -->
+                                                <div class="px-2 py-3 vuesax-list">
+                                                    <h5 class="fs-5">Brand</h5>
+                                                    <!-- Brand item start -->
+                                                    <div class="form-check user-select-none text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="brand-1">
+                                                        <label class="form-check-label w-100" for="brand-1">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Insigni</div>
+                                                                <div>1920</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Brand item end -->
+                                                    <!-- Brand item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="brand-2">
+                                                        <label class="form-check-label w-100" for="brand-2">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Samsung</div>
+                                                                <div>750</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Brand item end -->
+                                                    <!-- Brand item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="brand-3">
+                                                        <label class="form-check-label w-100" for="brand-3">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Apple</div>
+                                                                <div>460</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Brand item end -->
+                                                    <!-- Brand item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="brand-4">
+                                                        <label class="form-check-label w-100" for="brand-4">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>HP</div>
+                                                                <div>781</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Brand item end -->
+                                                    <!-- Brand item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="brand-5">
+                                                        <label class="form-check-label w-100" for="brand-5">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Sony</div>
+                                                                <div>840</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Brand item end -->
+                                                    <!-- Brand item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="brand-6">
+                                                        <label class="form-check-label w-100" for="brand-6">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Metra</div>
+                                                                <div>1425</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Brand item end -->
+                                                    <!-- Brand item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="brand-7">
+                                                        <label class="form-check-label w-100" for="brand-7">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Dyne</div>
+                                                                <div>45</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Brand item end -->
+                                                    <!-- Brand item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="brand-8">
+                                                        <label class="form-check-label w-100" for="brand-8">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>LG</div>
+                                                                <div>87</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Brand item end -->
+                                                    <!-- Brand item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="brand-9">
+                                                        <label class="form-check-label w-100" for="brand-9">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Canon</div>
+                                                                <div>457</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Brand item end -->
+                                                    <!-- Brand item start -->
+                                                    <div class="form-check user-select-none pt-3 text-primary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="brand-10">
+                                                        <label class="form-check-label w-100" for="brand-10">
+                                                            <div class="d-flex justify-content-between fw-medium">
+                                                                <div>Speck</div>
+                                                                <div>584</div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <!-- Brand item end -->
+                                                </div>
+                                                <!-- Brand end -->
+                                                <hr>
+                                                <!-- Rating start -->
+                                                <div class="px-2 py-3 vuesax-rating">
+                                                    <h5 class="fs-5">Rating</h5>
+                                                    <!-- Rating item start -->
+                                                    <div class="d-flex justify-content-between fw-medium pb-3">
+                                                        <div>
+                                                            <a href="#" class="text-primary text-decoration-none">
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <span> & Up</span>
+                                                            </a>
+                                                        </div>
+                                                        <div>8800</div>
+                                                    </div>
+                                                    <!-- Rating item end -->
+                                                    <!-- Rating item start -->
+                                                    <div class="d-flex justify-content-between fw-medium pb-3">
+                                                        <div>
+                                                            <a href="#" class="text-primary text-decoration-none">
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <span> & Up</span>
+                                                            </a>
+                                                        </div>
+                                                        <div>3250</div>
+                                                    </div>
+                                                    <!-- Rating item end -->
+                                                    <!-- Rating item start -->
+                                                    <div class="d-flex justify-content-between fw-medium pb-3">
+                                                        <div>
+                                                            <a href="#" class="text-primary text-decoration-none">
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <span> & Up</span>
+                                                            </a>
+                                                        </div>
+                                                        <div>4580</div>
+                                                    </div>
+                                                    <!-- Rating item end -->
+                                                    <!-- Rating item start -->
+                                                    <div class="d-flex justify-content-between fw-medium pb-3">
+                                                        <div>
+                                                            <a href="#" class="text-primary text-decoration-none">
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <span> & Up</span>
+                                                            </a>
+                                                        </div>
+                                                        <div>450</div>
+                                                    </div>
+                                                    <!-- Rating item end -->
+                                                    <!-- Rating item start -->
+                                                    <div class="d-flex justify-content-between fw-medium pb-3">
+                                                        <div>
+                                                            <a href="#" class="text-primary text-decoration-none">
+                                                                <i class="bi bi-star text-warning"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <span> & Up</span>
+                                                            </a>
+                                                        </div>
+                                                        <div>874</div>
+                                                    </div>
+                                                    <!-- Rating item end -->
+                                                    <!-- Rating item start -->
+                                                    <div class="d-flex justify-content-between fw-medium pb-3">
+                                                        <div>
+                                                            <a href="#" class="text-primary text-decoration-none">
+                                                                <i class="bi bi-star"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <i class="bi bi-star"></i>
+                                                                <span> & Up</span>
+                                                            </a>
+                                                        </div>
+                                                        <div>8674</div>
+                                                    </div>
+                                                    <!-- Rating item end -->
+                                                </div>
+                                                <!-- Rating end -->
+                                            </div>
+                                            <div class="py-3 vuesax-clear-filter">
+                                                <a href=""
+                                                    class="btn btn-block py-3 btn-secondary border-0 w-100 text-success fs-5 text-uppercase">Apply Filter</a>
+                                            </div>
+                                        </aside>
                                     </div>
-                                </aside>
+                                </nav>
+
+
+
+
+
+
+
+
+
+
+
                             </div>
                             <!-- Page side bar end -->
                             <!-- Content  start -->
-                            <div class="col-md-9 pt-4">
+                            <div class="col-xl-9 col-12 pt-4">
                                 <div class="d-flex flex-column">
                                     <div class="d-flex mb-1 justify-content-between align-items-center">
                                         <p class="fs-5 mb-0 fw-semibold">7,618 results found in 5ms</p>
@@ -664,7 +725,8 @@
                                         <form action="">
                                             <input
                                                 class="form-control py-2 px-4 rounded fw-light fs-5 lh-base border-0 drop-box-shadow"
-                                                type="search" placeholder="Search here" id='search-box' aria-label="Search here">
+                                                type="search" placeholder="Search here" id='search-box'
+                                                aria-label="Search here">
                                         </form>
                                     </div>
                                     <!-- Search end -->
@@ -674,20 +736,21 @@
                                         <!-- Product grid start -->
 
                                         <!-- Grid item start -->
-                                        <div class="col-md-4 gy-4">
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
                                             <div
                                                 class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
 
-                                                <div class="p-4 h-100 d-flex align-items-center">
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
                                                     <img src="images/product/1.png"
                                                         class="card-img-top img-fluid d-block mx-auto pb-2"
                                                         alt="product-image">
-                                                    
+
                                                 </div>
                                                 <div class="d-flex align-items-stretch flex-column">
                                                     <div class="d-flex align-items-stretch h-100 flex-column p-4">
                                                         <div class="pt-3 pb-2 d-flex justify-content-between">
-                                                            <div class="bg-secondary py-1 px-2 small text-success rounded">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
                                                                 3.4
                                                                 <i class="bi bi-star"></i>
                                                             </div>
@@ -697,68 +760,72 @@
                                                             <h5 class="card-title lh-base fw-semibold fs-5">Apple Watch
                                                                 Series 4
                                                                 GPS</h5>
-                                                            <small class="card-text small fw-light">Redesigned from scratch
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
                                                                 and
                                                                 completely revised.</small>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
                                                         <button
-                                                        class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
-                                                            class="bi bi-bag-plus"></i> add to cart</button>
-                                                    <button
-                                                        class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
-                                                            class="bi bi-heart"></i> WISHLIST</button>
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- Grid item end -->
                                         <!-- Grid item start -->
-                                        <div class="col-md-4 gy-4">
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
                                             <div
                                                 class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
 
-                                                <div class="p-4 h-100 d-flex align-items-center">
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
                                                     <img src="images/product/2.png"
-                                                    class="card-img-top img-fluid d-block mx-auto pb-2"
-                                                    alt="product-image">
-                                                    
+                                                        class="card-img-top img-fluid d-block mx-auto pb-2"
+                                                        alt="product-image">
+
                                                 </div>
                                                 <div class="d-flex align-items-stretch flex-column">
                                                     <div class="d-flex align-items-stretch h-100 flex-column p-4">
                                                         <div class="pt-3 pb-2 d-flex justify-content-between">
-                                                            <div class="bg-secondary py-1 px-2 small text-success rounded">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
                                                                 5
                                                                 <i class="bi bi-star"></i>
                                                             </div>
                                                             <div class="text-primary fw-semibold">$199</div>
                                                         </div>
                                                         <div class="card-body p-0">
-                                                            <h5 class="card-title lh-base fw-semibold fs-5">JBL Speaker</h5>
-                                                            <small class="card-text small fw-light">Redesigned from scratch
+                                                            <h5 class="card-title lh-base fw-semibold fs-5">JBL Speaker
+                                                            </h5>
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
                                                                 and
                                                                 completely revised.</small>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
                                                         <button
-                                                        class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
-                                                            class="bi bi-bag-plus"></i> add to cart</button>
-                                                    <button
-                                                        class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
-                                                            class="bi bi-heart"></i> WISHLIST</button>
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- Grid item end -->
                                         <!-- Grid item start -->
-                                        <div class="col-md-4 gy-4">
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
                                             <div
                                                 class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
 
-                                                <div class="p-4 h-100 d-flex align-items-center">
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
                                                     <img src="images/product/4.png"
                                                         class="card-img-top img-fluid d-block mx-auto pb-2"
                                                         alt="product-image">
@@ -766,116 +833,125 @@
                                                 <div class="d-flex align-items-stretch flex-column">
                                                     <div class="d-flex align-items-stretch h-100 flex-column p-4">
                                                         <div class="pt-3 pb-2 d-flex justify-content-between">
-                                                            <div class="bg-secondary py-1 px-2 small text-success rounded">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
                                                                 3.4
                                                                 <i class="bi bi-star"></i>
                                                             </div>
                                                             <div class="text-primary fw-semibold">$450</div>
                                                         </div>
                                                         <div class="card-body p-0">
-                                                            <h5 class="card-title lh-base fw-semibold fs-5">Beats Headphones
+                                                            <h5 class="card-title lh-base fw-semibold fs-5">Beats
+                                                                Headphones
                                                             </h5>
-                                                            <small class="card-text small fw-light">Redesigned from scratch
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
                                                                 and
                                                                 completely revised.</small>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
                                                         <button
-                                                        class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
-                                                            class="bi bi-bag-plus"></i> add to cart</button>
-                                                    <button
-                                                        class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
-                                                            class="bi bi-heart"></i> WISHLIST</button>
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- Grid item end -->
                                         <!-- Grid item start -->
-                                        <div class="col-md-4 gy-4">
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
                                             <div
                                                 class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
 
-                                                <div class="p-4 h-100 d-flex align-items-center">
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
                                                     <img src="images/product/3.png"
-                                                    class="card-img-top img-fluid d-block mx-auto pb-2"
-                                                    alt="product-image">
+                                                        class="card-img-top img-fluid d-block mx-auto pb-2"
+                                                        alt="product-image">
                                                 </div>
                                                 <div class="d-flex align-items-stretch flex-column">
                                                     <div class="d-flex align-items-stretch h-100 flex-column p-4">
                                                         <div class="pt-3 pb-2 d-flex justify-content-between">
-                                                            <div class="bg-secondary py-1 px-2 small text-success rounded">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
                                                                 4.4
                                                                 <i class="bi bi-star"></i>
                                                             </div>
                                                             <div class="text-primary fw-semibold">$899</div>
                                                         </div>
                                                         <div class="card-body p-0">
-                                                            <h5 class="card-title lh-base fw-semibold fs-5">Apple iPhone X
+                                                            <h5 class="card-title lh-base fw-semibold fs-5">Apple iPhone
+                                                                X
                                                                 128GB</h5>
-                                                            <small class="card-text small fw-light">Redesigned from scratch
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
                                                                 and
                                                                 completely revised.</small>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
                                                         <button
-                                                        class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
-                                                            class="bi bi-bag-plus"></i> add to cart</button>
-                                                    <button
-                                                        class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
-                                                            class="bi bi-heart"></i> WISHLIST</button>
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- Grid item end -->
                                         <!-- Grid item start -->
-                                        <div class="col-md-4 gy-4">
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
                                             <div
                                                 class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
 
-                                                <div class="p-4 h-100 d-flex align-items-center">
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
                                                     <img src="images/product/5.png"
-                                                    class="card-img-top img-fluid d-block mx-auto pb-2"
-                                                    alt="product-image">
+                                                        class="card-img-top img-fluid d-block mx-auto pb-2"
+                                                        alt="product-image">
                                                 </div>
                                                 <div class="d-flex align-items-stretch flex-column">
                                                     <div class="d-flex align-items-stretch h-100 flex-column p-4">
                                                         <div class="pt-3 pb-2 d-flex justify-content-between">
-                                                            <div class="bg-secondary py-1 px-2 small text-success rounded">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
                                                                 4.5
                                                                 <i class="bi bi-star"></i>
                                                             </div>
                                                             <div class="text-primary fw-semibold">$2500</div>
                                                         </div>
                                                         <div class="card-body p-0">
-                                                            <h5 class="card-title lh-base fw-semibold fs-5">Apple Macbook
+                                                            <h5 class="card-title lh-base fw-semibold fs-5">Apple
+                                                                Macbook
                                                                 Pro 512GB SSD</h5>
-                                                            <small class="card-text small fw-light">Redesigned from scratch
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
                                                                 and
                                                                 completely revised.</small>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
                                                         <button
-                                                        class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
-                                                            class="bi bi-bag-plus"></i> add to cart</button>
-                                                    <button
-                                                        class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
-                                                            class="bi bi-heart"></i> WISHLIST</button>
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- Grid item end -->
                                         <!-- Grid item start -->
-                                        <div class="col-md-4 gy-4">
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
                                             <div
                                                 class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
 
-                                                <div class="p-4 h-100 d-flex align-items-center">
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
                                                     <img src="images/product/6.png"
                                                         class="card-img-top img-fluid d-block mx-auto pb-2"
                                                         alt="product-image">
@@ -883,38 +959,41 @@
                                                 <div class="d-flex align-items-stretch flex-column">
                                                     <div class="d-flex align-items-stretch h-100 flex-column p-4">
                                                         <div class="pt-3 pb-2 d-flex justify-content-between">
-                                                            <div class="bg-secondary py-1 px-2 small text-success rounded">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
                                                                 5
                                                                 <i class="bi bi-star"></i>
                                                             </div>
                                                             <div class="text-primary fw-semibold">$899</div>
                                                         </div>
                                                         <div class="card-body p-0">
-                                                            <h5 class="card-title lh-base fw-semibold fs-5">Apple iPad Pro
+                                                            <h5 class="card-title lh-base fw-semibold fs-5">Apple iPad
+                                                                Pro
                                                                 64GB</h5>
-                                                            <small class="card-text small fw-light">Redesigned from scratch
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
                                                                 and
                                                                 completely revised.</small>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
                                                         <button
-                                                        class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
-                                                            class="bi bi-bag-plus"></i> add to cart</button>
-                                                    <button
-                                                        class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
-                                                            class="bi bi-heart"></i> WISHLIST</button>
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- Grid item end -->
                                         <!-- Grid item start -->
-                                        <div class="col-md-4 gy-4">
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
                                             <div
                                                 class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
 
-                                                <div class="p-4 h-100 d-flex align-items-center">
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
                                                     <img src="images/product/7.png"
                                                         class="card-img-top img-fluid d-block mx-auto pb-2"
                                                         alt="product-image">
@@ -922,38 +1001,41 @@
                                                 <div class="d-flex align-items-stretch flex-column">
                                                     <div class="d-flex align-items-stretch h-100 flex-column p-4">
                                                         <div class="pt-3 pb-2 d-flex justify-content-between">
-                                                            <div class="bg-secondary py-1 px-2 small text-success rounded">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
                                                                 3.3
                                                                 <i class="bi bi-star"></i>
                                                             </div>
                                                             <div class="text-primary fw-semibold">$339</div>
                                                         </div>
                                                         <div class="card-body p-0">
-                                                            <h5 class="card-title lh-base fw-semibold fs-5">Apple Homepod
+                                                            <h5 class="card-title lh-base fw-semibold fs-5">Apple
+                                                                Homepod
                                                             </h5>
-                                                            <small class="card-text small fw-light">Redesigned from scratch
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
                                                                 and
                                                                 completely revised.</small>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
                                                         <button
-                                                        class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
-                                                            class="bi bi-bag-plus"></i> add to cart</button>
-                                                    <button
-                                                        class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
-                                                            class="bi bi-heart"></i> WISHLIST</button>
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- Grid item end -->
                                         <!-- Grid item start -->
-                                        <div class="col-md-4 gy-4">
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
                                             <div
                                                 class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
 
-                                                <div class="p-4 h-100 d-flex align-items-center">
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
                                                     <img src="images/product/8.png"
                                                         class="card-img-top img-fluid d-block mx-auto pb-2"
                                                         alt="product-image">
@@ -961,7 +1043,8 @@
                                                 <div class="d-flex align-items-stretch flex-column">
                                                     <div class="d-flex align-items-stretch h-100 flex-column p-4">
                                                         <div class="pt-3 pb-2 d-flex justify-content-between">
-                                                            <div class="bg-secondary py-1 px-2 small text-success rounded">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
                                                                 5
                                                                 <i class="bi bi-star"></i>
                                                             </div>
@@ -970,29 +1053,30 @@
                                                         <div class="card-body p-0">
                                                             <h5 class="card-title lh-base fw-semibold fs-5">JBuds Air
                                                                 Wireless Bluetooth…</h5>
-                                                            <small class="card-text small fw-light">Redesigned from scratch
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
                                                                 and
                                                                 completely revised.</small>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
                                                         <button
-                                                        class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
-                                                            class="bi bi-bag-plus"></i> add to cart</button>
-                                                    <button
-                                                        class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
-                                                            class="bi bi-heart"></i> WISHLIST</button>
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- Grid item end -->
                                         <!-- Grid item start -->
-                                        <div class="col-md-4 gy-4">
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
                                             <div
                                                 class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
 
-                                                <div class="p-4 h-100 d-flex align-items-center">
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
                                                     <img src="images/product/9.png"
                                                         class="card-img-top img-fluid d-block mx-auto pb-2"
                                                         alt="product-image">
@@ -1000,7 +1084,8 @@
                                                 <div class="d-flex align-items-stretch flex-column">
                                                     <div class="d-flex align-items-stretch h-100 flex-column p-4">
                                                         <div class="pt-3 pb-2 d-flex justify-content-between">
-                                                            <div class="bg-secondary py-1 px-2 small text-success rounded">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
                                                                 4.5
                                                                 <i class="bi bi-star"></i>
                                                             </div>
@@ -1009,18 +1094,146 @@
                                                         <div class="card-body p-0">
                                                             <h5 class="card-title lh-base fw-semibold fs-5">Apple Magic
                                                                 Mouse </h5>
-                                                            <small class="card-text small fw-light">Redesigned from scratch
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
                                                                 and
                                                                 completely revised.</small>
                                                         </div>
                                                     </div>
                                                     <div class="d-flex justify-content-between">
                                                         <button
-                                                        class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
-                                                            class="bi bi-bag-plus"></i> add to cart</button>
-                                                    <button
-                                                        class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
-                                                            class="bi bi-heart"></i> WISHLIST</button>
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Grid item end -->
+                                        <!-- Grid item start -->
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
+                                            <div
+                                                class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
+
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
+                                                    <img src="images/product/1.png"
+                                                        class="card-img-top img-fluid d-block mx-auto pb-2"
+                                                        alt="product-image">
+
+                                                </div>
+                                                <div class="d-flex align-items-stretch flex-column">
+                                                    <div class="d-flex align-items-stretch h-100 flex-column p-4">
+                                                        <div class="pt-3 pb-2 d-flex justify-content-between">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
+                                                                3.4
+                                                                <i class="bi bi-star"></i>
+                                                            </div>
+                                                            <div class="text-primary fw-semibold">$344</div>
+                                                        </div>
+                                                        <div class="card-body p-0">
+                                                            <h5 class="card-title lh-base fw-semibold fs-5">Apple Watch
+                                                                Series 4
+                                                                GPS</h5>
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
+                                                                and
+                                                                completely revised.</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <button
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Grid item end -->
+                                        <!-- Grid item start -->
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
+                                            <div
+                                                class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
+
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
+                                                    <img src="images/product/2.png"
+                                                        class="card-img-top img-fluid d-block mx-auto pb-2"
+                                                        alt="product-image">
+
+                                                </div>
+                                                <div class="d-flex align-items-stretch flex-column">
+                                                    <div class="d-flex align-items-stretch h-100 flex-column p-4">
+                                                        <div class="pt-3 pb-2 d-flex justify-content-between">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
+                                                                5
+                                                                <i class="bi bi-star"></i>
+                                                            </div>
+                                                            <div class="text-primary fw-semibold">$199</div>
+                                                        </div>
+                                                        <div class="card-body p-0">
+                                                            <h5 class="card-title lh-base fw-semibold fs-5">JBL Speaker
+                                                            </h5>
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
+                                                                and
+                                                                completely revised.</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <button
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Grid item end -->
+                                        <!-- Grid item start -->
+                                        <div class="col-sm-6 col-lg-4 col-xxl-3  gy-4">
+                                            <div
+                                                class="card border-0 rounded drop-box-shadow text-primary d-flex flex-column align-items-stretch h-100">
+
+                                                <div class="p-4 pb-0 h-100 d-flex align-items-center">
+                                                    <img src="images/product/4.png"
+                                                        class="card-img-top img-fluid d-block mx-auto pb-2"
+                                                        alt="product-image">
+                                                </div>
+                                                <div class="d-flex align-items-stretch flex-column">
+                                                    <div class="d-flex align-items-stretch h-100 flex-column p-4">
+                                                        <div class="pt-3 pb-2 d-flex justify-content-between">
+                                                            <div
+                                                                class="bg-secondary py-1 px-2 small text-success rounded">
+                                                                3.4
+                                                                <i class="bi bi-star"></i>
+                                                            </div>
+                                                            <div class="text-primary fw-semibold">$450</div>
+                                                        </div>
+                                                        <div class="card-body p-0">
+                                                            <h5 class="card-title lh-base fw-semibold fs-5">Beats
+                                                                Headphones
+                                                            </h5>
+                                                            <small class="card-text small fw-light">Redesigned from
+                                                                scratch
+                                                                and
+                                                                completely revised.</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <button
+                                                            class="btn-secondary btn-product py-2 fw-semibold border-0 w-100 text-success text-uppercase"><i
+                                                                class="bi bi-bag-plus"></i> add to cart</button>
+                                                        <button
+                                                            class="btn-light py-2 btn-product fw-semibold border-0 w-100 text-primary text-uppercase"><i
+                                                                class="bi bi-heart"></i> WISHLIST</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1031,20 +1244,36 @@
                                         <!-- Pagination start -->
                                         <div class="col-md-12 d-flex justify-content-center my-4">
                                             <nav aria-label="Page navigation example" class="d-flex align-items-center">
-                                                <span class="btn btn-light rounded-circle position-relative p-3 me-3 pagination-jump"><a href=""><i class="bi-caret-left-fill position-absolute top-0 start-0 ps-1 ms-1 pt-1"></i></a></span>
+                                                <span
+                                                    class="btn btn-light rounded-circle position-relative p-3 me-3 pagination-jump"><a
+                                                        href=""><i
+                                                            class="bi-caret-left-fill position-absolute top-0 start-0 ps-1 ms-1 pt-1"></i></a></span>
                                                 <ul class="pagination mb-0">
-                                                    <li class="page-item fw-semibold"><a class="page-link border-0 btn-light" href="#">1</a></li>
-                                                    <li class="page-item fw-semibold"><a class="page-link border-0 btn-light" href="#">2</a></li>
-                                                    <li class="page-item fw-semibold"><a class="page-link border-0 btn-light" href="#">3</a></li>
-                                                    <li class="page-item fw-semibold"><a class="page-link border-0 btn-light" href="#">4</a></li>
-                                                    <li class="page-item fw-semibold"><a class="page-link border-0 btn-light" href="#">5</a></li>
-                                                    <li class="page-item fw-semibold"><a class="page-link border-0 btn-light" href="#">6</a></li>
-                                                    <li class="page-item fw-semibold"><a class="page-link border-0 btn-light" href="#">7</a></li>
-                                                    <li class="page-item fw-semibold"><a class="page-link border-0 btn-light" href="#">8</a></li>
-                                                    <li class="page-item fw-semibold"><a class="page-link border-0 btn-light" href="#">9</a></li>
-                                                    <li class="page-item fw-semibold"><a class="page-link border-0 btn-light" href="#">10</a></li>
+                                                    <li class="page-item fw-semibold"><a
+                                                            class="page-link border-0 btn-light" href="#">1</a></li>
+                                                    <li class="page-item fw-semibold"><a
+                                                            class="page-link border-0 btn-light" href="#">2</a></li>
+                                                    <li class="page-item fw-semibold"><a
+                                                            class="page-link border-0 btn-light" href="#">3</a></li>
+                                                    <li class="page-item fw-semibold"><a
+                                                            class="page-link border-0 btn-light" href="#">4</a></li>
+                                                    <li class="page-item fw-semibold"><a
+                                                            class="page-link border-0 btn-light" href="#">5</a></li>
+                                                    <li class="page-item fw-semibold"><a
+                                                            class="page-link border-0 btn-light" href="#">6</a></li>
+                                                    <li class="page-item fw-semibold"><a
+                                                            class="page-link border-0 btn-light" href="#">7</a></li>
+                                                    <li class="page-item fw-semibold"><a
+                                                            class="page-link border-0 btn-light" href="#">8</a></li>
+                                                    <li class="page-item fw-semibold"><a
+                                                            class="page-link border-0 btn-light" href="#">9</a></li>
+                                                    <li class="page-item fw-semibold"><a
+                                                            class="page-link border-0 btn-light" href="#">10</a></li>
                                                 </ul>
-                                                <span class="btn btn-light rounded-circle position-relative p-3 ms-3 pagination-jump"><a href=""><i class="bi-caret-right-fill position-absolute top-0 start-0 ps-1 ms-1 pt-1"></i></a></span>
+                                                <span
+                                                    class="btn btn-light rounded-circle position-relative p-3 ms-3 pagination-jump"><a
+                                                        href=""><i
+                                                            class="bi-caret-right-fill position-absolute top-0 start-0 ps-1 ms-1 pt-1"></i></a></span>
                                             </nav>
                                         </div>
                                         <!-- Pagination end -->

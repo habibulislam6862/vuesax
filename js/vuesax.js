@@ -82,3 +82,13 @@ inputRight.addEventListener("touchend", (e) => {
 document.getElementById('search').addEventListener('click', function(){
   document.getElementById('search-box').focus();
 });
+//offcanvas sidebar
+let toggleClassList = document.getElementsByClassName('navbarSideCollapse');
+for(let i = 0; i < toggleClassList.length; i++) {
+  toggleClassList[i].addEventListener('click', function () {
+    document.querySelector('.offcanvas-collapse').classList.toggle('open')
+  })
+}
+document.querySelector('#sidebar-toggle').addEventListener('click', function () {
+  document.querySelector('.offcanvas-collapse').classList.toggle('open')
+})

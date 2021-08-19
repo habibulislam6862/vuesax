@@ -18,6 +18,9 @@ body {
 .text-primary {
   color: hsl(0, 0%, 17%) !important;
 }
+.bg-primary {
+  background-color: #fff!important;
+}
 .text-secondary {
   color: #6f64f8 !important;
 }
@@ -94,7 +97,7 @@ hr {
 /**************/
 .fixed-sidebar {
   min-height: 0;
-  width: 16.667%;
+  width: 400px;
 }
 .logo {
   color: #7e72f2;
@@ -352,7 +355,7 @@ input[type="range"]:focus::-ms-fill-upper {
   border-radius: 5px;
   background-color: #6f64f8;
 }
-label[for*=cat-]>.d-flex, .vuesax-range>.d-flex {
+label[for*=cat-]>.d-flex {
   column-gap: 10px!important;
 }
 
@@ -395,4 +398,36 @@ label[for*=cat-]>.d-flex, .vuesax-range>.d-flex {
   outline: 0;
   box-shadow: none;
   border: none!important;
+}
+
+/* Offcanvas style */
+/******************/
+.offcanvas-collapse, .offcanvas-start {
+  transition: transform .3s ease-in-out,  .3s ease-in-out;
+}
+
+@media (max-width: 1199.98px) {
+  .filter {
+    cursor: pointer;
+  }
+  .offcanvas-collapse {
+    position: fixed;
+    bottom: 0;
+    top:0;
+    left: 100%;
+    width: 100%;
+    overflow-y: auto;
+    visibility: hidden;
+    z-index: 10;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  
+}
+@media (min-width: 1199.98px) {
+  .border-xl-0 {
+    border: none!important
+  }
 }
