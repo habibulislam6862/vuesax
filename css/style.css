@@ -15,6 +15,9 @@ body {
   background-color: #f9f9f9;
   font-family: 'Montserrat', sans-serif
 }
+.z-top {
+  z-index: 1000;
+}
 .text-primary {
   color: hsl(0, 0%, 17%) !important;
 }
@@ -188,7 +191,13 @@ input[type="search"]::-webkit-search-results-decoration {
 .navbar {
   height: 62px;
 }
-
+.navbar-light .navbar-toggler {
+  color: hsla(244, 91%, 68%, 0.5);
+  border: none;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='hsla(0, 0%, 17%, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 /*Page title, breadcrumb and settings*/
 /************************************/
 
@@ -429,5 +438,19 @@ label[for*=cat-]>.d-flex {
 @media (min-width: 1199.98px) {
   .border-xl-0 {
     border: none!important
+  }
+}
+@media (min-width: 768px) {
+  .position-md-relative {
+    position: relative!important;
+  }
+  .w-md-initial {
+    width: initial!important;
+  }
+  .drop-box-shadow-md-none {
+    box-shadow: none;
+  }
+  .bg-md-trans {
+    background-color: transparent!important;
   }
 }

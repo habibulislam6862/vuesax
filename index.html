@@ -182,9 +182,9 @@
         <!-- ----------------- -->
         <div class="row">
             <!-- Main content start -->
-            <div class="col-md-12 ps-0">
+            <div class="col-md-12 ps-0 position-relative">
                 <header class="p-4">
-                    <nav class="navbar drop-box-shadow bg-success navbar-expand navbar-light bg-light rounded">
+                    <nav class="navbar drop-box-shadow bg-success navbar-expand-md navbar-light bg-light rounded">
                         <div class="container-fluid">
                             <!-- left menu start -->
                             <ul class="list-inline mb-0 fs-5">
@@ -210,20 +210,20 @@
                             </button>
                             <!-- mobile menu buttom end -->
                             <!-- right menu start -->
-                            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
-                                <ul class="navbar-nav d-flex align-items-center">
+                            <div class="collapse navbar-collapse flex-grow-0 position-absolute position-md-relative w-100 start-0 w-md-initial top-0 mt-5 mt-md-0" id="navbarNav">
+                                <ul class="navbar-nav bg-md-trans z-top position-relative bg-primary d-flex flex-row justify-content-between align-items-center mt-4 mt-md-0 rounded drop-box-shadow drop-box-shadow-md-none" style="padding: 0 0.75rem">
                                     <li class="nav-item">
                                         <a class="nav-link text-primary active" aria-current="page" href="#">English</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item ms-2 ms-md-0">
                                         <a class="nav-link text-primary" href="#"><i class="bi bi-bell"></i></a>
                                     </li>
                                     <li class="nav-item d-lg-block d-none">
                                         <a class="nav-link text-primary" id='search' href="#"><i
                                                 class="bi bi-search"></i></a>
                                     </li>
-                                    <li class="nav-item ps-3">
-                                        <a class="nav-link text-primary" href="#">
+                                    <li class="nav-item ps-3 flex-grow-1">
+                                        <a class="nav-link text-primary float-end" href="#">
                                             <div class="d-flex flex-column justify-content-center align-items-center ">
                                                 <div>
                                                     <p class="m-0 fw-semibold">John Doe</p>
@@ -234,8 +234,8 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-primary" href="#"> <img src="images/user.png" alt="user"
+                                    <li class="nav-item ps-4 ps-md-0">
+                                        <a class="float-end nav-link text-primary" href="#"> <img src="images/user.png" alt="user"
                                                 class="user rounded-circle">
                                         </a>
                                     </li>
@@ -284,13 +284,13 @@
                                 <nav class="pb-4 pt-0 navbar justify-content-start align-items-center navbar-expand-xl flex-xl-wrap d-xl-block navbar-light"
                                     aria-label="Main navigation">
 
-                                    <div class="border border-xl-0 border-2 px-3 px-xl-0 py-xl-0 py-1 filter">
+                                    <div class="border border-xl-0 border-2 px-3 px-xl-0 py-xl-0 py-1 filter navbarSideCollapse">
                                         <div class="d-flex align-items-center">
-                                            <div class="navbar-toggler p-0 border-0 navbarSideCollapse" type="button"
+                                            <div class="navbar-toggler p-0 border-0 " type="button"
                                             aria-label="Toggle navigation">
                                             <i class="bi bi-filter fs-5 "></i>
                                         </div>
-                                        <h5 class="text-xl-primary mb-0 ms-2 ms-xl-0 fs-5 navbarSideCollapse" style="margin-bottom: 6px;">
+                                        <h5 class="text-xl-primary mb-0 ms-2 ms-xl-0 fs-5" style="margin-bottom: 6px;">
                                             Filters</h5>
                                         </div>
                                     </div>
